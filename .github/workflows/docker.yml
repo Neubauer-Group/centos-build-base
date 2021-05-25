@@ -103,7 +103,9 @@ jobs:
         with:
           context: .
           file: Dockerfile
-          tags: neubauergroup/centos-build-base:latest,ghcr.io/${{steps.prep.outputs.repo_name_lowercase}}:latest
+          tags: |
+            neubauergroup/centos-build-base:latest
+            ghcr.io/${{steps.prep.outputs.repo_name_lowercase}}:latest
           labels: |
             org.opencontainers.image.source=${{ github.event.repository.html_url }}
             org.opencontainers.image.created=${{ steps.prep.outputs.created }}
