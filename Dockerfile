@@ -2,6 +2,7 @@ ARG BUILDER_IMAGE=neubauergroup/centos-python3:3.8.10
 FROM ${BUILDER_IMAGE} as builder
 
 USER root
+ENV HOME=/root
 WORKDIR /
 
 SHELL [ "/bin/bash", "-c" ]
@@ -13,6 +14,7 @@ RUN yum update -y && \
     yum install -y \
       gcc \
       gcc-c++ \
+      git \
       make && \
     yum clean all && \
     yum autoremove -y && \
