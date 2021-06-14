@@ -14,6 +14,7 @@ RUN yum update -y && \
     yum install -y \
       gcc \
       gcc-c++ \
+      git \
       make && \
     yum clean all && \
     yum autoremove -y && \
