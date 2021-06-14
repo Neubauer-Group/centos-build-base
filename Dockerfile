@@ -2,6 +2,7 @@ ARG BUILDER_IMAGE=neubauergroup/centos-python3:3.8.10
 FROM ${BUILDER_IMAGE} as builder
 
 USER root
+HOME /root
 WORKDIR /
 
 SHELL [ "/bin/bash", "-c" ]
