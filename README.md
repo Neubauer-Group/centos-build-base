@@ -1,4 +1,4 @@
-# CentOS 7 image with CPython 3.8 and modern CMake
+# CentOS 7 image with CPython 3.9 and modern CMake
 
 Docker image based on CentOS 7 with modern build tools
 
