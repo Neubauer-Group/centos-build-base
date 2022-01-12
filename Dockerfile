@@ -1,4 +1,4 @@
-ARG BUILDER_IMAGE=neubauergroup/centos-python3:3.8.11
+ARG BUILDER_IMAGE=neubauergroup/centos-python3:3.9.9
 FROM ${BUILDER_IMAGE} as builder
 
 USER root
